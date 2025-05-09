@@ -10,6 +10,7 @@ export default function Custom404() {
         src={error404Pic}
         alt="error 404"
         className="w-[500px] rounded-[50%] mt-[50px] shadow-2xl border-[7px] border-white/60"
+        priority
       />
     </div>
   );

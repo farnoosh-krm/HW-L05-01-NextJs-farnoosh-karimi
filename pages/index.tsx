@@ -25,7 +25,7 @@ export default function Home({ PostsTitle }: PostsListProps) {
 export const getStaticProps: GetStaticProps = async () => {
   const response = await fetch("https://jsonplaceholder.typicode.com/posts");
   const Posts = await response.json();
-  const PostsTitle = Posts.slice(0, 5);
+  const PostsTitle = Posts.slice(0, 7);
 
   return {
     props: {
